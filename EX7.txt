@@ -1,0 +1,25 @@
+import React, { useState } from 'react';
+import logo from './logo.svg';
+import './App.css';
+function App() {
+const [count, setCount] = useState(0);
+const increment = () => setCount(count + 1);
+const decrement = () => setCount(count - 1);
+return (
+<div className="App">
+<p>Current count: {count}</p> {/* Step 4: Display counter */}
+<div>
+<button onClick={increment}>Increase</button> {/* Button to increase */}
+<button onClick={decrement}>Decrease</button> {/* Button to decrease */}
+</div>
+</div>
+);
+}
+export default App;
+
+change the code in the src-->App.js
+
+step1: npx create-react-app exp7
+step2: change the code src/App.js
+step3: cd exp7
+step4: npm start
